@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutri Calc</title>
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./src/styles/headerEfooter.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/responsive.css" />
+
+    <!--CSS bootstrap -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- javascript -->
+    <script src="./src/js/index.js" defer></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/img/icons/folhas32.png"
+    />
+  </head>
+  <body>
+    <header id="topo">
+      <nav class="menu-lateral">
+        <div class="btn-expandir">
+          <i id="btn-expansao" class="bi bi-list"></i>
+        </div>
+
+        <div>
+          <div class="item-menu selecionado">
+            <a href="">
+              <span class="icon"><i class="bi bi-house"></i></span>
+              <span class="txt-link">Home</span>
+            </a>
+          </div>
+
+          <div class="item-menu">
+            <a href="#link-imc">
+              <span class="icon"><i class="bi bi-book"></i></span>
+              <span class="txt-link">IMC</span>
+            </a>
+          </div>
+
+          <div class="item-menu">
+            <a href="#link-basal">
+              <span class="icon"><i class="bi bi-book"></i></span>
+              <span class="txt-link">TMB</span>
+            </a>
+          </div>
+
+          <div class="item-menu" id="drop">
+            <div>
+              <span class="icon"><i class="bi bi-calculator"></i></span>
+              <span class="txt-link"> Cálculos</span>
+            </div>
+
+            <div class="lista">
+              <span><a class="txt-drop" href="#calc-imc">Cálculo IMC</a></span>
+              <span
+                ><a class="txt-drop" href="#calc-basal">Cálculo Basal</a></span
+              >
+            </div>
+          </div>
+
+          <div class="item-menu">
+            <a href="src/html/sobre.html">
+              <span class="icon"><i class="bi bi-window"></i></span>
+              <span class="txt-link">Sobre</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="div-redes-sociais">
+          <a href="https://pt-br.facebook.com/" target="_blank">
+            <span class="icon-redes"><i class="bi bi-facebook"></i></span>
+          </a>
+
+          <a href="https://www.instagram.com/" target="_blank">
+            <span class="icon-redes"><i class="bi bi-instagram"></i></span>
+          </a>
+
+          <a href="https://twitter.com/" target="_blank">
+            <span class="icon-redes"><i class="bi bi-twitter-x"></i></span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="content-main">
+        <div class="content-main-top">
+          <h1>
+            Venha saber mais sobre índice de massa corporal e taxa metabólica
+            basal
+          </h1>
+          <p>
+            Faça os
+            <a class="link-calculo" href="#link-calc">cálculos</a> disponivéis!
+          </p>
+        </div>
+
+        <!-- CARROSSEL -->
+        <div class="content-main-bottom">
+          <div
+            id="carouselExampleInterval"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img
+                  src="src/img/img1920x1280.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  src="src/img/img1920x1280(2).jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  src="src/img/img1920x1280(3).jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- <div class="img-main">
+          <img src="./src/img/img1920x1280.jpg" alt="img-dieta" />
+        </div> -->
+      </div>
+    </main>
+
+    <section class="section">
+      <div class="section-content-top">
+        <div id="link-imc" class="content-item">
+          <h1>ÍNDICE DE MASSA CORPORAL</h1>
+
+          <div class="content-text-imc">
+            <h2>O que é índice de massa corporal</h2>
+            <p class="m-0 p-0">
+              IMC é a sigla de Índice de Massa Corporal, um parâmetro que é
+              utilizado para avaliar se o peso está dentro do valor ideal para a
+              altura.
+            </p>
+            <p class="m-0 p-0">
+              Isso significa que, a partir do resultado do IMC é possível saber
+              se a pessoa está acima ou abaixo do peso recomendado e também
+              diagnosticar problemas de saúde como obesidade ou desnutrição.
+            </p>
+            <p class="m-0 p-0">
+              O IMC pode ser utilizado em crianças, adolescentes, adultos ou
+              idosos.
+            </p>
+          </div>
+
+          <div class="content-text-imc">
+            <h2>Como calcular o IMC</h2>
+            <p class="m-0 p-0">
+              O IMC é calculado dividindo o peso (em kg) pela altura ao quadrado
+              (em m), de acordo com a seguinte fórmula:
+            </p>
+            <p class="m-0 p-0"><b>IMC = peso ÷ (altura x altura)</b>.</p>
+          </div>
+
+          <div class="content-text-imc" style="margin-top: 3rem">
+            <p class="m-0 p-0">
+              A classificação do índice de massa corporal (IMC) pode ajudar a
+              identificar problemas de obesidade ou desnutrição, em crianças,
+              adolescentes, adultos e idosos.
+            </p>
+            <p class="m-0 p-0">
+              Além de calcular o valor de IMC, esta calculadora também indica
+              qual o intervalo de peso ideal que deve ter para garantir uma
+              melhor qualidade de vida.
+            </p>
+            <p class="m-0 p-0">
+              Ter um peso dentro do intervalo de peso ideal ajuda ainda a evitar
+              o aparecimento de várias doenças crônicas, como diabetes e
+              hipertensão.
+            </p>
+          </div>
+
+          <div class="div-tabela-imc">
+            <table style="overflow-x: auto" class="tabela-imc">
+              <thead>
+                <tr>
+                  <th>IMC</th>
+                  <th>Classificação</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Menor que 18,5</td>
+                  <td>Magreza</td>
+                </tr>
+                <tr>
+                  <td>18,5 a 24,9</td>
+                  <td>Normal</td>
+                </tr>
+                <tr>
+                  <td>25 a 29,9</td>
+                  <td>Sobrepeso</td>
+                </tr>
+                <tr>
+                  <td>30 a 34,9</td>
+                  <td>Obesidade grau I</td>
+                </tr>
+                <tr>
+                  <td>35 a 39,9</td>
+                  <td>Obesidade grau II</td>
+                </tr>
+                <tr>
+                  <td>Maior que 40</td>
+                  <td>Obesidade grau III</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="link-basal" class="content-item">
+          <h1>TAXA METABÓLICA BASAL</h1>
+          <div class="content-text-basal">
+            <h2>O que é taxa metabólica basal</h2>
+            <p class="m-0 p-0">
+              A princípio vamos entender melhor o que é o Gasto Energético Basal
+              (GEB), ou Taxa Metabólica Basal (TMB) como também é chamado. Nada
+              mais é que a quantidade mínima de energia (em kcal) necessária
+              para que nosso corpo mantenha seus processos vitais em
+              funcionamento, como a respiração, a circulação, o metabolismo
+              celular e a conservação de temperatura corporal.
+            </p>
+            <p class="m-0 p-0">
+              Esse gasto corresponde a aproximadamente 60 a 75% do gasto
+              energético diário total. O restante refere-se ao gasto vindo do
+              efeito térmico do exercício físico, o efeito térmico dos alimentos
+              que consumimos e da termogênese facultativa (adaptações às
+              variações de temperatura que podem modificar o gasto energético).
+            </p>
+            <p class="m-0 p-0">
+              Visto isso, para que nosso organismo se mantenha em funcionamento
+              adequado e sem prejuízos, a alimentação deve ser suficiente para
+              atender às demandas de energia do GEB.
+            </p>
+            <p class="m-0 p-0">
+              Na prática, o profissional estima o valor do gasto energético
+              total (GET) para definir o planejamento alimentar do paciente, ou
+              seja, a soma do GEB com os outros fatores que contribuem para o
+              nosso gasto energético diário. Mas vamos falar mais adiante sobre
+              esse cálculo.
+            </p>
+          </div>
+
+          <div class="content-text-basal">
+            <h2>Fator de atividade</h2>
+            <p class="m-0 p-0">
+              Os valores do fator de atividade consideram a média entre o tempo
+              e o tipo de atividades realizadas ao longo do dia:
+            </p>
+
+            <ul>
+              <li>
+                <b>Leve:</b> considera atividades como cozinhar; limpar a casa;
+                cuidar de crianças; trabalhar sentado; e caminhar até 1 hora por
+                dia;
+              </li>
+              <li>
+                <b>Moderada:</b> inclui atividades como fazer 1 hora diária de
+                corrida, ciclismo, natação ou dança; trabalhar como operário de
+                construção, garçom, vendedor de porta em porta, carteiro ou
+                entregador de mercadorias leves;
+              </li>
+              <li>
+                <b>Intensa:</b> considera atividades como natação, corrida,
+                andar de bicicleta ou dançar 2 horas por dia; trabalhador rural
+                que trabalha com instrumentos manuais e caminham longas
+                distâncias, várias horas por dia; ou entregador de mercadorias
+                pesadas.
+              </li>
+            </ul>
+
+            <p class="m-0 p-0">
+              Identificar o fator de atividade é fundamental para calcular o
+              gasto calórico diário, já que a quantidade de calorias gastas
+              durante o dia variam de acordo com o nível de atividade que a
+              pessoa tem, o que influencia no metabolismo.
+            </p>
+          </div>
+
+          <div class="content-text-basal">
+            <h2>Equações preditivas</h2>
+            <p class="m-0 p-0">
+              São fórmulas matemáticas que levam em consideração fatores como
+              idade, sexo e nível de atividade física para estimar o gasto
+              calórico. Uma das equações mais utilizadas foi desenvolvida em
+              1919 pelos pesquisadores Arthur Harris e Francis Benedict, que
+              tiveram como base dados de 333 pessoas. Apesar da baixa precisão,
+              essa fórmula é amplamente utilizada devido à sua facilidade de
+              aplicação. Para calcular utilizando essa equação, é preciso
+              primeiro identificar a taxa de atividade:
+            </p>
+
+            <p style="margin-top: 1rem">Taxa de atividade:</p>
+            <ul>
+              <li>Sedentários (pouco ou nenhum exercício) fator = 1.2</li>
+              <li>
+                Levemente ativo (exercício leve 1 a 3 dias por semana) fator =
+                1.375
+              </li>
+              <li>
+                Moderadamente ativo (exercício moderado, faz esportes 3 a 5 dias
+                por semana) fator = 1.55
+              </li>
+              <li>
+                Altamente ativo (exercício pesado de 5 a 6 dias por semana)
+                fator = 1.725
+              </li>
+              <li>
+                Extremamente ativo (exercício pesado diariamente e até 2 vezes
+                por dia) fator = 1.9
+              </li>
+            </ul>
+            <p class="m-0 p-0">
+              Agora basta preencher os dados na calculadora abaixo. Se preferir,
+              utilize a fórmula que está na sequência.
+            </p>
+          </div>
+
+          <div class="content-text-basal">
+            <h2>Como calcular o Taxa Metabólica Basal (TMB)</h2>
+            <p class="m-0 p-0">
+              Pois bem, visto que agora que já conseguimos identificar o que é e
+              o que pode influenciar os valores de gasto energético basal de
+              cada indivíduo, precisamos entender quais são as maneiras
+              possíveis de obtermos esse valor.
+            </p>
+            <p class="m-0 p-0">
+              Um dos métodos mais acurados para fazer essa medição é a
+              calorimetria indireta, que é um aparelho que mensura a quantidade
+              consumida e produzida de CO2 e O2 para estimar este gasto
+              energético basal. No entanto, esse método tem um custo operacional
+              muito alto, não sendo acessível para a maioria dos profissionais
+              na clínica.
+            </p>
+            <p class="m-0 p-0">
+              Dessa forma, atualmente contamos com várias equações preditivas
+              para estimativa de gasto energético (basal ou total, dependendo da
+              fórmula) para que possamos estimar isso na prática. Tais fórmulas
+              utilizam variáveis como peso, idade, altura e nível de atividade
+              física.
+            </p>
+            <p class="m-0 p-0">
+              Começaremos por uma das mais utilizadas, Harris Benedict (1919). A
+              mesma é mais indicada para indivíduos saudáveis, eutróficos e
+              ativos, uma vez que pode ser que ela superestime os valores em
+              pessoas com obesidade.
+            </p>
+
+            <table style="overflow-x: auto" class="tabela-basal">
+              <thead>
+                <tr>
+                  <th>Gênero</th>
+                  <th>Fórmula</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Homens:</td>
+                  <td>
+                    TMB (kcal/dia) = Fator da taxa da atividade * 66 + ( 13,7 X
+                    P) + (5 X A) – (6,8 X I)
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mulheres:</td>
+                  <td>
+                    TMB (kcal/dia) = Fator da taxa da atividade * 655 + (9,6 x
+                    P) + (1,7 x A) – (4,71 X I)
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- <div class="content-item">
+          <h1>Cálculo nutricional para perda de peso</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error at
+            iste architecto quae expedita ab perspiciatis rem accusamus
+            reprehenderit, itaque beatae odit deserunt quod repudiandae unde
+            consectetur dignissimos dolorem ipsam suscipit, ipsum, mollitia a.
+            Optio nihil nam nostrum dolore ex.
+          </p>
+        </div> -->
+      </div>
+
+      <div id="link-calc"></div>
+      <div class="section-content-bottom">
+        <h1>Cálculos</h1>
+
+        <div class="content-imc">
+          <div id="calc-imc" class="imc">
+            <h1>Índice de Massa Corporal (IMC)</h1>
+
+            <form class="form-imc m-0 p-0" action="">
+              <div class="div-sexo-imc">
+                <p class="m-0 p-0">Sexo</p>
+                <input
+                  id="mulher"
+                  type="button"
+                  value="Mulher"
+                  class="btn-sexo-imc selecionadoM"
+                />
+                <input
+                  id="homem"
+                  type="button"
+                  value="Homem"
+                  class="btn-sexo-imc"
+                />
+              </div>
+
+              <div class="div-info-imc">
+                <p>Idade:</p>
+                <input
+                  id="idade-imc"
+                  class="input-info-imc"
+                  type="text"
+                  placeholder="Ex: 25"
+                  required
+                /><span> anos</span>
+              </div>
+
+              <div class="div-info-imc">
+                <p>Altura:</p>
+                <input
+                  id="altura-imc"
+                  class="input-info-imc"
+                  type="text"
+                  placeholder="Ex: 180"
+                  required
+                /><span> cm</span>
+              </div>
+
+              <div class="div-info-imc">
+                <p>Peso:</p>
+                <input
+                  id="peso-imc"
+                  class="input-info-imc"
+                  type="text"
+                  placeholder="Ex: 65"
+                  required
+                /><span> kg</span>
+              </div>
+
+              <div class="div-btn-calc-imc">
+                <button type="submit" class="btn-calc-imc">Calcular</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="div-result-imc-inicio">
+            <h1>Resultado</h1>
+            <div class="div-result-imc">
+              <p>Seu IMC é de: <span class="result-imc"></span></p>
+              <p>Classificação: <span class="classificacao"></span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-basal">
+          <div id="calc-basal" class="basal">
+            <h1>Taxa Metabólica Basal (TMB)</h1>
+
+            <form class="form-basal m-0 p-0" action="">
+              <div class="div-sexo-basal">
+                <p class="m-0 p-0">Sexo</p>
+                <input
+                  id="mulher"
+                  type="button"
+                  value="Mulher"
+                  class="btn-sexo-basal selecionadoM"
+                />
+                <input
+                  id="homem"
+                  type="button"
+                  value="Homem"
+                  class="btn-sexo-basal"
+                />
+              </div>
+
+              <div class="div-info-basal">
+                <p>Idade:</p>
+                <input
+                  id="idade-basal"
+                  class="input-info-basal"
+                  type="text"
+                  placeholder="Ex: 25"
+                  required
+                /><span> anos</span>
+              </div>
+
+              <div class="div-info-basal">
+                <p>Altura:</p>
+                <input
+                  id="altura-basal"
+                  class="input-info-basal"
+                  type="text"
+                  placeholder="Ex: 180"
+                  required
+                /><span> cm</span>
+              </div>
+
+              <div class="div-info-basal">
+                <p>Peso:</p>
+                <input
+                  id="peso-basal"
+                  class="input-info-basal"
+                  type="text"
+                  placeholder="Ex: 95"
+                  required
+                /><span> kg</span>
+              </div>
+
+              <div class="div-info-basal">
+                <p>Nível de Atividade</p>
+                <select id="atividade-basal" name="select">
+                  <option value="sedentario">Sedentário</option>
+                  <option value="levemente">Levemente Ativo</option>
+                  <option value="moderadamente">Moderadamente Ativo</option>
+                  <option value="altamente">Altamente Ativo</option>
+                  <option value="extramamente">Extramamente Ativo</option>
+                </select>
+              </div>
+
+              <div class="div-btn-calc-basal">
+                <button class="btn-calc-basal">Calcular</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="div-result-basal-inicio">
+            <h1>Resultado</h1>
+            <div class="div-result-basal">
+              <p>Taxa Metabólica Basal: <span class="result-basal"></span></p>
+              <p>
+                TMB baseada no nível de atividade:
+                <span class="result-atividade"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="back-top">
+      <a href="#topo"><i class="bi bi-caret-up-fill"></i></a>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content-left">
+        <div class="footer-content-left-content">
+          <h5>Conteúdos</h5>
+          <a href="#link-imc"
+            ><p class="m-0 p-0">Índice de Massa Corporal</p></a
+          >
+          <a href="#link-basal"><p class="m-0 p-0">Taxa Metabólica Basal</p></a>
+          <a href="#link-calc"><p class="m-0 p-0">Cálculos</p></a>
+          <a href="src/html/sobre.html"><p class="m-0 p-0">Sobre Nós</p></a>
+          <a href="index.html"
+            ><p class="m-0 p-0">Política de Privacidade</p></a
+          >
+        </div>
+      </div>
+
+      <div class="footer-content-right">
+        <div class="footer-content-right-content">
+          <p class="m-0 p-0">Assine a Newsletter</p>
+          <input type="text" placeholder="E-mail" id="email" />
+          <input type="text" placeholder="Nome:" id="name" />
+          <button class="addNewletter">Cadastrar</button>
+        </div>
+        <div class="footer-content-right-content2">
+          <p class="m-0 p-0">
+            2023 © Nutri Calc - Todos os direitos reservados.
+          </p>
+          <p class="attribution m-0 p-0">
+            Coded by <a href="https://github.com/pedronegraoo">Pedro Negrão</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <!--Script bootstrap-->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+  ></script>
+</html>
