@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Bodoni+Moda:opsz@6..96&family=Caprasimo&family=Inclusive+Sans&family=Lobster&family=Lobster+Two&family=Open+Sans:wght@300;500;700&family=Outfit:wght@300;400;600&family=Poppins:wght@100;400&family=Roboto+Slab:wght@100&family=Roboto:wght@100;400&display=swap");
+
+:root {
+  --color-clear: #93b1a6;
+  --color-blue-light: #2e8a99;
+  --color-blue-medium: #1f6f8e;
+  --color-blue-dark: #0e2954;
+  --color-blue-ultra-dark: #001c30;
+  --color-white: #faf1e4;
+}
+
+.section {
+  height: 100vh;
+}
+
+.all-content {
+  height: 100%;
+  display: flex;
+}
+
+/* ESQUERDA */
+
+.content-left-sobre {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-principal {
+  width: 60%;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 10px #00000056;
+}
+
+.drop768 {
+  display: none;
+}
+
+/* DIREITA */
+
+.content-right-sobre {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-sobre {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Bodoni Moda";
+  color: var(--color-blue-dark);
+  margin-bottom: 1rem;
+}
+
+.div-text-sobre {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-sobre {
+  width: 500px;
+  height: auto;
+  font-size: 18px;
+  font-family: "Open Sans";
+  color: var(--color-blue-dark);
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
