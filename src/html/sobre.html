@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutri Calc</title>
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!--CSS bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../styles/headerEfooter.css" />
+    <link rel="stylesheet" href="../styles/sobre.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+
+    <!-- js -->
+    <script src="../js/menuLateral.js" defer></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/icons/folhas32.png"
+    />
+  </head>
+  <body>
+    <header id="topo">
+      <nav class="menu-lateral">
+        <div class="btn-expandir">
+          <i id="btn-expansao" class="bi bi-list"></i>
+        </div>
+
+        <div>
+          <div class="item-menu selecionado">
+            <a href="../../index.html">
+              <span class="icon"><i class="bi bi-house"></i></span>
+              <span class="txt-link">Home</span>
+            </a>
+          </div>
+
+          <div class="item-menu">
+            <a href="../../index.html">
+              <span class="icon"><i class="bi bi-book"></i></span>
+              <span class="txt-link">IMC</span>
+            </a>
+          </div>
+
+          <div class="item-menu">
+            <a href="../../index.html">
+              <span class="icon"><i class="bi bi-book"></i></span>
+              <span class="txt-link">TMB</span>
+            </a>
+          </div>
+
+          <div class="item-menu" id="drop">
+            <div>
+              <span class="icon"><i class="bi bi-calculator"></i></span>
+              <span class="txt-link"> Cálculos</span>
+            </div>
+
+            <div class="lista">
+              <span
+                ><a class="txt-drop" href="../../index.html"
+                  >Cálculo IMC</a
+                ></span
+              >
+              <span
+                ><a class="txt-drop" href="../../index.html"
+                  >Cálculo Basal</a
+                ></span
+              >
+            </div>
+          </div>
+
+          <div class="item-menu">
+            <a href="sobre.html">
+              <span class="icon"><i class="bi bi-window"></i></span>
+              <span class="txt-link">Sobre</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="div-redes-sociais">
+          <a href="https://pt-br.facebook.com/" target="_blank">
+            <span class="icon-redes"><i class="bi bi-facebook"></i></span>
+          </a>
+
+          <a href="https://www.instagram.com/" target="_blank">
+            <span class="icon-redes"><i class="bi bi-instagram"></i></span>
+          </a>
+
+          <a href="https://twitter.com/" target="_blank">
+            <span class="icon-redes"><i class="bi bi-twitter-x"></i></span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="section">
+      <div class="all-content">
+        <div class="content-left-sobre">
+          <img class="img-principal" src="../img/img1920x2400.jpg" alt="" />
+          <img class="drop768" src="../img/img1920x1280(4).jpg" alt="" />
+        </div>
+
+        <div class="content-right-sobre">
+          <h1 class="title-sobre">Sobre Nós</h1>
+
+          <div class="div-text-sobre">
+            <p class="text-sobre">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+              obcaecati alias pariatur amet quia itaque doloremque, totam
+              consequuntur. Itaque, explicabo id iusto eaque quibusdam
+              dignissimos! Quis facere officiis laudantium labore nam adipisci
+              recusandae, assumenda sunt amet, doloribus itaque sit laborum
+              deserunt perspiciatis, distinctio aut atque? Voluptate
+              perspiciatis fugit facere, necessitatibus nisi repellat magnam
+              facilis mollitia laudantium hic doloribus asperiores optio
+              dolorem, dolore consectetur, vel reiciendis placeat nemo quos non
+              ab eligendi esse nulla dignissimos! Vel veniam deserunt illum
+              voluptatum distinctio sed expedita. Exercitationem cumque
+              expedita, asperiores maiores qui molestias reiciendis veritatis
+              odio, perferendis, est illo blanditiis deserunt dolor laborum
+              repudiandae.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content-left">
+        <div class="footer-content-left-content">
+          <h5>Conteúdos</h5>
+          <a href="../../index.html"
+            ><p class="m-0 p-0">Índice de Massa Corporal</p></a
+          >
+          <a href="../../index.html"
+            ><p class="m-0 p-0">Taxa Metabólica Basal</p></a
+          >
+          <a href="../../index.html"><p class="m-0 p-0">Cálculos</p></a>
+          <a href="sobre.html"><p class="m-0 p-0">Sobre Nós</p></a>
+          <a href="../../index.html"
+            ><p class="m-0 p-0">Política de Privacidade</p></a
+          >
+        </div>
+      </div>
+      <div class="footer-content-right">
+        <div class="footer-content-right-content">
+          <p class="m-0 p-0">Assine a Newsletter</p>
+          <input type="text" placeholder="E-mail" id="email" />
+          <input type="text" placeholder="Nome:" id="name" />
+          <button class="addNewletter">Cadastrar</button>
+        </div>
+        <div class="footer-content-right-content2">
+          <p class="m-0 p-0">
+            2023 © Nutri Calc - Todos os direitos reservados.
+          </p>
+          <p class="attribution m-0 p-0">
+            Coded by <a href="#">Pedro Negrão</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
