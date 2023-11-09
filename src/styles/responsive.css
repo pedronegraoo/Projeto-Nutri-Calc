@@ -406,8 +406,7 @@
   }
 
   .tabela-imc {
-    /* width: 15rem; */
-    width: 100%;
+    width: 19rem;
   }
 
   /* .tabela-basal td {
@@ -665,7 +664,6 @@
   }
 
   .content-main-top h1 {
-    /* background-color: green; */
     width: 78%;
     font-size: 1.1rem;
   }
@@ -685,7 +683,6 @@
   /* SECTION TOP */
 
   .section-content-top {
-    /* background-color: powderblue; */
     width: 78%;
   }
 
@@ -708,8 +705,7 @@
   }
 
   .tabela-imc {
-    /* width: 15rem; */
-    width: 100%;
+    width: 17.5rem;
   }
 
   /* .tabela-basal td {
@@ -724,7 +720,6 @@
   /* SECTION BOTTOM */
 
   .section-content-bottom {
-    /* background-color: green; */
     width: 78%;
   }
 
