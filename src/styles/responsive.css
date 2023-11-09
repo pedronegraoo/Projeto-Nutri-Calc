@@ -171,10 +171,6 @@
     font-size: 1.9rem;
   }
 
-  .content-main-bottom {
-    padding-left: 1rem;
-  }
-
   /* SECTION TOP */
 
   .section-content-top {
@@ -370,14 +366,6 @@
   .content-main-top p {
     font-size: 0.9rem;
     margin-left: 3rem;
-  }
-
-  .content-main-bottom {
-    margin: 0;
-  }
-
-  .carousel {
-    width: 100%;
   }
 
   /* SECTION TOP */
@@ -670,14 +658,6 @@
 
   .content-main-top p {
     font-size: 0.8rem;
-  }
-
-  .content-main-bottom {
-    margin: 0;
-  }
-
-  .carousel {
-    width: 100%;
   }
 
   /* SECTION TOP */
