@@ -63,12 +63,7 @@
 }
 
 .carousel {
-  width: 80%;
-  border-radius: 1rem;
-}
-
-.carousel-item img {
-  border-radius: 1rem;
+  width: 100%;
 }
 
 .link-calculo {
