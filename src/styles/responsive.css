@@ -157,6 +157,10 @@
     top: 2.9rem;
   }
 
+  .lista span {
+    height: 3.5rem;
+  }
+
   .div-redes-sociais {
     margin-top: 0.5rem;
   }
@@ -353,26 +357,34 @@
   }
 
   /* MAIN */
+  .content-main-top {
+    height: 300px;
+  }
+
   .content-main-top h1 {
-    /* width: 65%; */
-    width: 67%;
-    /* font-size: 1.2rem; */
+    width: 78%;
     font-size: 1.3rem;
+    margin-left: 3rem;
   }
 
   .content-main-top p {
     font-size: 0.9rem;
+    margin-left: 3rem;
   }
 
   .content-main-bottom {
-    padding-left: 2.5rem;
+    margin: 0;
+  }
+
+  .carousel {
+    width: 100%;
   }
 
   /* SECTION TOP */
 
   .section-content-top {
-    /* width: 19rem; */
-    width: 68%;
+    width: 75%;
+    margin-left: 3rem;
   }
 
   .content-item h1 {
@@ -394,7 +406,7 @@
   }
 
   .tabela-imc {
-    width: 15rem;
+    min-width: 100%;
   }
 
   /* .tabela-basal td {
@@ -409,8 +421,8 @@
   /* SECTION BOTTOM */
 
   .section-content-bottom {
-    /* width: 19rem; */
-    width: 68%;
+    width: 75%;
+    margin-left: 3rem;
   }
 
   .section-content-bottom > h1 {
@@ -424,12 +436,14 @@
   }
 
   .imc {
-    width: 15rem;
+    /* width: 15rem; */
+    width: 17rem;
     height: 32rem;
   }
 
   .basal {
-    width: 15rem;
+    /* width: 15rem; */
+    width: 17rem;
     height: 37rem;
   }
 
@@ -453,6 +467,13 @@
   .div-sexo-basal p,
   .div-info-basal p {
     font-size: 1rem;
+  }
+
+  .input-info-imc,
+  .input-info-basal {
+    width: 5rem;
+    height: 2.3rem;
+    padding: 0.5rem;
   }
 
   .div-sexo-imc,
@@ -638,8 +659,13 @@
   }
 
   /* MAIN */
+  .content-main-top {
+    height: 300px;
+  }
+
   .content-main-top h1 {
-    width: 65%;
+    /* background-color: green; */
+    width: 78%;
     font-size: 1.1rem;
   }
 
@@ -648,13 +674,18 @@
   }
 
   .content-main-bottom {
-    padding-left: 2.5rem;
+    margin: 0;
+  }
+
+  .carousel {
+    width: 100%;
   }
 
   /* SECTION TOP */
 
   .section-content-top {
-    width: 68%;
+    /* background-color: powderblue; */
+    width: 78%;
   }
 
   .content-item h1 {
@@ -675,10 +706,6 @@
     margin-left: 0.2rem;
   }
 
-  .tabela-imc {
-    width: 15rem;
-  }
-
   /* .tabela-basal td {
     font-size: 1rem;
   } */
@@ -691,8 +718,8 @@
   /* SECTION BOTTOM */
 
   .section-content-bottom {
-    /* width: 19rem; */
-    width: 68%;
+    /* background-color: green; */
+    width: 78%;
   }
 
   .section-content-bottom > h1 {
@@ -700,12 +727,14 @@
   }
 
   .imc {
-    width: 13rem;
+    /* width: 13rem; */
+    width: 16rem;
     height: 32rem;
   }
 
   .basal {
-    width: 13rem;
+    /* width: 13rem; */
+    width: 16rem;
     height: 37rem;
   }
 
@@ -741,7 +770,7 @@
   .div-sexo-basal,
   .div-info-imc,
   .div-info-basal {
-    padding-left: 2rem;
+    padding-left: 2.6rem;
   }
 
   #atividade-basal {
