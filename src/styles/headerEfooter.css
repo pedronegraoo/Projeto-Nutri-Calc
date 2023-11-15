@@ -28,7 +28,7 @@
   width: 80px;
   height: 100%;
   background-color: var(--color-blue-medium);
-  box-shadow: 5px 0 0 var(--color-blue-light-atual);
+  box-shadow: 5px 0 0 #87bfff;
   padding: 30px 0 0 1%;
 
   display: flex;
@@ -68,7 +68,7 @@
 } */
 
 .item-menu:hover {
-  background: var(--color-blue-light-atual);
+  background: #87bfff;
 }
 
 .item-menu a,
@@ -99,7 +99,7 @@
 }
 
 .selecionado {
-  background: var(--color-blue-light-atual);
+  background: #87bfff;
 }
 
 .div-redes-sociais {

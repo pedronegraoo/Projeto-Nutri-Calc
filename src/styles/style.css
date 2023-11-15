@@ -69,7 +69,8 @@
 
 .link-calculo {
   text-decoration: underline;
-  color: var(--color-blue-light);
+  /* color: var(--color-blue-light); */
+  color: #87bfff;
 }
 
 /* SECTION */
@@ -208,8 +209,7 @@ tbody tr:nth-child(odd) {
 }
 
 .imc {
-  /* background-color: #2667ff; */
-  background-color: var(--color-blue-calculadoras);
+  background-color: #87bfff;
   width: 30rem;
   height: 35rem;
   display: flex;
@@ -321,7 +321,7 @@ tbody tr:nth-child(odd) {
 }
 
 .basal {
-  background-color: var(--color-blue-calculadoras);
+  background-color: #87bfff;
   width: 30rem;
   height: 40rem;
   display: flex;
