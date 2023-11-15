@@ -7,6 +7,7 @@
   --color-blue-dark: #0e2954;
   --color-blue-ultra-dark: #001c30;
   --color-white: #faf1e4;
+  --color-blue-light-atual: #3f8efc;
 }
 
 * {
@@ -27,7 +28,7 @@
   width: 80px;
   height: 100%;
   background-color: var(--color-blue-medium);
-  box-shadow: 5px 0 0 var(--color-clear);
+  box-shadow: 5px 0 0 var(--color-blue-light-atual);
   padding: 30px 0 0 1%;
 
   display: flex;
@@ -67,7 +68,7 @@
 } */
 
 .item-menu:hover {
-  background: var(--color-clear);
+  background: var(--color-blue-light-atual);
 }
 
 .item-menu a,
@@ -98,7 +99,7 @@
 }
 
 .selecionado {
-  background-color: var(--color-clear);
+  background: var(--color-blue-light-atual);
 }
 
 .div-redes-sociais {

@@ -7,6 +7,7 @@
   --color-blue-dark: #0e2954;
   --color-blue-ultra-dark: #001c30;
   --color-white: #faf1e4;
+  --color-blue-calculadoras: #3f8efc;
 }
 
 .main {
@@ -207,7 +208,8 @@ tbody tr:nth-child(odd) {
 }
 
 .imc {
-  background-color: var(--color-blue-light);
+  /* background-color: #2667ff; */
+  background-color: var(--color-blue-calculadoras);
   width: 30rem;
   height: 35rem;
   display: flex;
@@ -319,7 +321,7 @@ tbody tr:nth-child(odd) {
 }
 
 .basal {
-  background-color: var(--color-blue-light);
+  background-color: var(--color-blue-calculadoras);
   width: 30rem;
   height: 40rem;
   display: flex;
