@@ -7,7 +7,7 @@
   --color-blue-dark: #0e2954;
   --color-blue-ultra-dark: #001c30;
   --color-white: #faf1e4;
-  --color-blue-calculadoras: #3f8efc;
+  --color-blue-calculadoras: #87bfff;
 }
 
 .main {
@@ -127,10 +127,15 @@
 
 .tabela-imc {
   width: 36rem;
+  /* background-color: rgb(232, 232, 252); */
+  /* background-color: rgb(213, 213, 248); */
+  background-color: #cacafc;
 }
 
 .tabela-basal {
   width: 100%;
+  /* background-color: #d5d5f8; */
+  background-color: #cacafc;
 }
 
 .tabela-imc,
@@ -140,7 +145,6 @@ td {
   border-collapse: collapse;
   padding: 10px;
   text-align: center;
-  background-color: #c4e1e681;
   border: 1px solid var(--color-blue-ultra-dark);
   margin-top: 1rem;
   /* color: #383636; */
@@ -270,6 +274,7 @@ tbody tr:nth-child(odd) {
   border-radius: 0.5rem;
   cursor: pointer;
   margin-right: 0.5rem;
+  color: var(--color-blue-ultra-dark);
 }
 
 .input-info-imc,
