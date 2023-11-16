@@ -154,6 +154,11 @@ tbody tr:nth-child(odd) {
   background-color: #74bee9c5;
 }
 
+.content-text-imc,
+.content-text-basal {
+  text-align: justify;
+}
+
 .content-text-basal,
 .content-text-basal ul,
 .content-text-imc {

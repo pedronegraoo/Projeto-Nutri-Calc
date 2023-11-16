@@ -73,4 +73,5 @@
   color: var(--color-blue-dark);
   line-height: 22px;
   letter-spacing: 0.5px;
+  text-align: justify;
 }
