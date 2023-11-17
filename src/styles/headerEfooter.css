@@ -38,7 +38,7 @@
   position: fixed;
   z-index: 10;
   overflow: hidden;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-lateral.expandir {
@@ -60,15 +60,18 @@
   list-style-type: none;
   transition: all 0.2s;
   margin-top: 0.5rem;
-  /* pointer-events: none; */
-}
 
-/* .not-active {
-  pointer-events: auto;
-} */
+  /* opacity: 0; */
+  visibility: hidden;
+}
 
 .item-menu:hover {
   background: #87bfff;
+}
+
+.exibir-item-menu {
+  /* opacity: 1; */
+  visibility: visible;
 }
 
 .item-menu a,
@@ -84,7 +87,7 @@
   font-family: "Roboto";
   font-size: 20px;
   margin-left: 70px;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
   opacity: 0;
 }
 
@@ -113,17 +116,32 @@
 
 .div-redes-sociais.mostrar {
   visibility: visible;
-  transition: all 0.5s ease;
 }
 
 .icon-redes i {
   color: #ffffff;
   font-size: 1.5rem;
-  transition: all 0.2s;
 }
 
 .icon-redes i:hover {
   color: var(--color-blue-dark);
+}
+
+.overlay-menu {
+  width: 100%;
+  height: 100%;
+  background-color: #000000a1;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9;
+
+  display: none;
+}
+
+.active-overlay {
+  display: block;
 }
 
 /* DROPDOWN */
@@ -143,7 +161,6 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  /* background-color: green; */
 }
 
 #drop.exibir .lista span {
