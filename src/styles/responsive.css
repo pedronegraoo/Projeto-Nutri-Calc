@@ -1,5 +1,6 @@
 @media screen and (max-width: 1024px) {
   /* menu lateral */
+
   .menu-lateral.expandir {
     width: 250px;
   }
@@ -18,6 +19,7 @@
   }
 
   /* MAIN */
+
   .content-main-top h1 {
     width: 55rem;
     font-size: 2.3rem;
@@ -63,7 +65,6 @@
   }
 
   .basal {
-    background-color: var(--color-blue-light);
     width: 25rem;
     height: 37rem;
   }
@@ -136,10 +137,6 @@
     width: 230px;
   }
 
-  .item-menu {
-    margin-top: 0.3rem;
-  }
-
   .item-menu a,
   .item-menu div {
     padding: 10px 0;
@@ -166,6 +163,7 @@
   }
 
   /* MAIN */
+
   .content-main-top h1 {
     width: 31rem;
     font-size: 1.9rem;
@@ -174,7 +172,6 @@
   /* SECTION TOP */
 
   .section-content-top {
-    /* width: 34rem; */
     width: 75%;
   }
 
@@ -209,6 +206,7 @@
   }
 
   /* SECTION BOTTOM */
+
   .section-content-bottom {
     width: 75%;
   }
@@ -223,43 +221,8 @@
     gap: 3rem;
   }
 
-  .imc {
-    width: 25rem;
-    height: 32rem;
-  }
-
-  .basal {
-    background-color: var(--color-blue-light);
-    width: 25rem;
-    height: 37rem;
-  }
-
-  .imc h1,
-  .basal h1 {
-    font-size: 1.5rem;
-  }
-
-  .div-sexo-imc p,
-  .div-info-imc p,
-  .div-sexo-basal p,
-  .div-info-basal p {
-    font-size: 1.2rem;
-  }
-
-  .div-sexo-imc,
-  .div-sexo-basal,
-  .div-info-imc,
-  .div-info-basal {
-    padding-left: 5.8rem;
-  }
-
-  .div-result-imc-inicio,
-  .div-result-basal-inicio {
-    width: 22rem;
-    height: 18rem;
-  }
-
   /* PAGE SOBRE */
+
   .section {
     height: 100%;
   }
@@ -281,7 +244,7 @@
 
   .drop768 {
     display: block;
-    width: 65%;
+    width: 70%;
     border-radius: 0.5rem;
     box-shadow: 4px 4px 10px #00000056;
   }
@@ -298,7 +261,7 @@
   }
 
   .text-sobre {
-    width: 65%;
+    width: 70%;
     font-size: 0.9rem;
     padding-inline: 0;
     line-height: 22px;
@@ -367,7 +330,6 @@
   /* SECTION TOP */
 
   .section-content-top {
-    width: 75%;
     margin-left: 3rem;
   }
 
@@ -405,7 +367,6 @@
   /* SECTION BOTTOM */
 
   .section-content-bottom {
-    width: 75%;
     margin-left: 3rem;
   }
 
@@ -413,20 +374,12 @@
     font-size: 1.8rem;
   }
 
-  .content-imc,
-  .content-basal {
-    flex-direction: column;
-    gap: 3rem;
-  }
-
   .imc {
-    /* width: 15rem; */
     width: 17rem;
     height: 32rem;
   }
 
   .basal {
-    /* width: 15rem; */
     width: 17rem;
     height: 37rem;
   }
@@ -544,49 +497,21 @@
 
   /* PAGE SOBRE */
 
-  .section {
-    height: 100%;
-  }
-
-  .all-content {
-    flex-direction: column-reverse;
-  }
-
   /* ESQUERDA */
 
-  .content-left-sobre {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  .img-principal {
-    display: none;
-  }
-
   .drop768 {
-    display: block;
-    width: 65%;
-    border-radius: 0.5rem;
-    box-shadow: 4px 4px 10px #00000056;
     margin-left: 2rem;
   }
 
   /* DIREITA */
 
-  .content-right-sobre {
-    width: 100%;
-  }
-
   .title-sobre {
     font-size: 25px;
-    margin-top: 2rem;
     margin-left: 2rem;
   }
 
   .text-sobre {
-    width: 68%;
     font-size: 0.7rem;
-    padding-inline: 0;
     line-height: 18px;
     letter-spacing: 0.5px;
     margin-left: 3rem;
@@ -606,10 +531,6 @@
 
   .btn-expandir > i {
     font-size: 20px;
-  }
-
-  .lista {
-    top: 2.9rem;
   }
 
   .div-redes-sociais {
@@ -634,10 +555,6 @@
     padding: 0 7px;
   }
 
-  .lista span > a {
-    font-size: 0.8rem;
-  }
-
   .icon-redes i {
     font-size: 1.1rem;
   }
@@ -645,7 +562,6 @@
   /* MAIN */
 
   .content-main-top h1 {
-    width: 78%;
     font-size: 1.1rem;
   }
 
@@ -654,10 +570,6 @@
   }
 
   /* SECTION TOP */
-
-  .section-content-top {
-    width: 78%;
-  }
 
   .content-item h1 {
     font-size: 1.1rem;
@@ -692,10 +604,6 @@
 
   /* SECTION BOTTOM */
 
-  .section-content-bottom {
-    width: 78%;
-  }
-
   .section-content-bottom > h1 {
     font-size: 1.6rem;
   }
@@ -715,8 +623,6 @@
   .imc h1,
   .basal h1 {
     font-size: 1.1rem;
-    padding-inline: 3px;
-    text-align: center;
   }
 
   .btn-sexo-imc,
@@ -740,15 +646,7 @@
     padding: 0.5rem;
   }
 
-  .div-sexo-imc,
-  .div-sexo-basal,
-  .div-info-imc,
-  .div-info-basal {
-    padding-left: 2.6rem;
-  }
-
   #atividade-basal {
-    width: 10rem;
     font-size: 0.8rem;
   }
 
@@ -779,50 +677,20 @@
 
   /* PAGE SOBRE */
 
-  .section {
-    height: 100%;
-  }
-
-  .all-content {
-    flex-direction: column-reverse;
-  }
-
   /* ESQUERDA */
-  .content-left-sobre {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  .img-principal {
-    display: none;
-  }
 
   .drop768 {
-    display: block;
     width: 70%;
-    border-radius: 0.5rem;
-    box-shadow: 4px 4px 10px #00000056;
-    margin-left: 2rem;
   }
 
   /* DIREITA */
 
-  .content-right-sobre {
-    width: 100%;
-  }
-
   .title-sobre {
     font-size: 20px;
-    margin-top: 2rem;
-    margin-left: 2rem;
   }
 
   .text-sobre {
     width: 70%;
-    font-size: 0.7rem;
-    padding-inline: 0;
     line-height: 15px;
-    letter-spacing: 0.5px;
-    margin-left: 3rem;
   }
 }
