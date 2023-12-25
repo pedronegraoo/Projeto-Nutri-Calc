@@ -28,7 +28,8 @@
   width: 80px;
   height: 100%;
   background-color: var(--color-blue-medium);
-  box-shadow: 5px 0 0 #87bfff;
+  /* box-shadow: 5px 0 0 #87bfff; */
+  box-shadow: 5px 0 0 #0d6dfda8;
   padding: 30px 0 0 1%;
 
   display: flex;
@@ -66,7 +67,8 @@
 }
 
 .item-menu:hover {
-  background: #87bfff;
+  /* background: #87bfff; */
+  background: #0d6dfda8;
 }
 
 .exibir-item-menu {
@@ -102,7 +104,8 @@
 }
 
 .selecionado {
-  background: #87bfff;
+  /* background: #87bfff; */
+  background: #0d6dfda8;
 }
 
 .div-redes-sociais {
