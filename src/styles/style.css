@@ -151,9 +151,8 @@ td {
 }
 
 tbody tr:nth-child(odd) {
-  /* background-color: #bfd4e0; */
+  background-color: #bfd4e0;
   /* background-color: #74bee9c5; */
-  background-color: #87bfff;
 }
 
 .content-text-imc,
