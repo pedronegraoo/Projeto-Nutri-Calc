@@ -216,7 +216,8 @@ tbody tr:nth-child(odd) {
 
 .imc {
   /* background-color: #87bfff; */
-  background-color: #0d6dfda8;
+  /* background-color: #0d6dfda8; */
+  background-color: #0d6dfd60;
   width: 30rem;
   height: 35rem;
   display: flex;
@@ -332,7 +333,8 @@ tbody tr:nth-child(odd) {
 
 .basal {
   /* background-color: #87bfff; */
-  background-color: #0d6dfda8;
+  /* background-color: #0d6dfda8; */
+  background-color: #0d6dfd60;
   width: 30rem;
   height: 40rem;
   display: flex;
