@@ -54,7 +54,7 @@ formImc.addEventListener("submit", (ev) => {
 
   mostrarClassificacao();
   resultadoNaTela();
-  // limparInputs();
+  limparInputs();
   cont++;
 });
 
@@ -104,9 +104,8 @@ function resultadoNaTela() {
 }
 
 function limparInputs() {
-  pesoIMC.value = "";
-  alturaIMC.value = "";
-  idadeIMC.value = "";
+  formImc.reset(); /*RESET metodo para limpar o formulario */
+  formBasal.reset();
 }
 
 // CALCULO BASAL
@@ -169,6 +168,7 @@ formBasal.addEventListener("submit", (ev) => {
     calculoHomem();
   }
 
+  limparInputs();
   contBasal++;
 });
 
