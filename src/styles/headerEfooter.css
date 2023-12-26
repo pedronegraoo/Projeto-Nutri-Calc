@@ -319,7 +319,6 @@
   display: none;
   justify-content: end;
   padding: 1.5rem;
-  /* background-color: green; */
 
   position: fixed;
   bottom: 0;
@@ -328,11 +327,12 @@
 
 .back-top a i {
   font-size: 2.5rem;
+  transition: all 0.2s;
 }
 
 .back-top a i:hover {
   /* border: 2px solid var(--color-blue-light); */
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .showBackTop {
