@@ -316,16 +316,25 @@
 }
 
 .back-top {
-  display: flex;
+  display: none;
   justify-content: end;
   padding: 1.5rem;
+  /* background-color: green; */
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
-.back-top a {
-  font-size: 3rem;
+.back-top a i {
+  font-size: 2.5rem;
 }
 
-.back-top a:hover {
+.back-top a i:hover {
   /* border: 2px solid var(--color-blue-light); */
-  opacity: 0.8;
+  opacity: 0.7;
+}
+
+.showBackTop {
+  display: flex;
 }
