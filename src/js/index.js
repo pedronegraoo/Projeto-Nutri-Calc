@@ -294,3 +294,20 @@ overlay.addEventListener("click", () => {
     item.classList.remove("exibir-item-menu");
   });
 });
+
+// BOTÃO BACK TO TOP APARECENDO COM O SCROLL
+
+const backToTop = document.querySelector(".back-top");
+
+const observer = new IntersectionObserver((entries) => {
+  console.log(entries);
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      backToTop.classList.add("showBackTop");
+    } else {
+      backToTop.classList.remove("showBackTop");
+    }
+  });
+});
+
+observer.observe(document.querySelector(".point"));
